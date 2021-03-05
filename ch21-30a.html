@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Chapter 21-30a</title>
+
+        <script>
+            var num1 = parseFloat(prompt("Enter any Number"));
+            var a = Math.ceil(num1);
+            alert(a);
+
+            var text ="This is my dummy text";
+            alert(text);
+            var newtext = text.slice(0,4);
+            alert(newtext);     //This
+
+            var sptText= newtext.split("");
+            alert(sptText);       //T,h,i,s
+
+            //var revText =sptText.reverse();
+            //alert (revText);      //s,i,h,T
+
+            var reText = "";
+            for (var j = sptText.length - 1; j >= 0; j--) { 
+                reText += sptText[j]; 
+                // or reText = reText + sptText[j];
+            }
+            alert(reText);     //s,i,h,T
+           
+        </script>
+    </head>
+
+    <body>
+        <h1>Split & Slice Functions on String</h1>
+    </body>
+</html>

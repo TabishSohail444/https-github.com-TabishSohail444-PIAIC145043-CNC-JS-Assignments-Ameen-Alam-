@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Chapter15-16-17</title>
+
+        <script>
+            var courses = [];
+            var course1 =prompt("Enter course 1 Name");
+            var course2 =prompt("Enter course 2 Name");
+            var course3 =prompt("Enter course 3 Name");
+            var course4 =prompt("Enter course 4 Name");
+            var course5 =prompt("Enter course 5 Name");
+
+            courses.push(course1);
+            courses.push(course2);
+            courses.push(course3);
+            courses.push(course4);
+            courses.push(course5);
+
+            alert(courses);
+
+            alert(course1);
+            alert(course2);
+            alert(course3);
+            alert(course4);
+            alert(course5);
+
+            course1 =prompt("Enter course 1 Name again");
+            courses.splice(0,1,course1);
+            alert(courses);
+          
+        </script>
+    </head>
+
+    <body>
+        <h1>Push and Alter Array Data</h1>
+    </body>
+</html>

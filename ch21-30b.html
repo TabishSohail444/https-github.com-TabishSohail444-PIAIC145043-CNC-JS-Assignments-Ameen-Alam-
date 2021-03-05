@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Chapter 21-30b</title>
+
+        <script>
+            var input = prompt("Enter your text Here", "cloUd naTive computinG");
+            var newtext = input.toLocaleLowerCase().split(" ");
+            console.log(input);
+            console.log(newtext);
+
+          
+            for (var i = 0; i < newtext.length; i++) {
+                newtext[i] = newtext[i].charAt(0).toUpperCase() + newtext[i].substring(1);
+            }
+            input = newtext.join(' ');
+            console.log(input);
+        </script>
+
+    </head>
+
+    <body>
+        <h1>To Capitalize the Initial Lettter of each word.</h1>
+    </body>
+</html>

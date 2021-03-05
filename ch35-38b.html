@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Chapter 35-38b</title>
+
+        <script>
+            var input = Number(prompt("Enter a number to factorize", "6"));
+            console.log(input);
+
+            function fact(inp) {
+                if (inp < 0)
+                return -1;
+                else if (inp == 0)
+                return 1;
+                else {
+                return (inp * fact(inp - 1));
+                }
+            }
+            var res = fact(input);
+            console.log(res);
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1>Factorialize a Number</h1>
+    </body>
+</html>
